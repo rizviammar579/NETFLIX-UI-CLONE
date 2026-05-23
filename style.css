@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    background-color: black;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+}
+
+.section1 {
+    background-image: url(images/top-background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+@media only screen and (max-width:1100px) {
+    .section1 {
+        background-size: cover;
+    }
+}
+
+header {
+    padding: 25px;
+}
+
+@media only screen and (max-width:600px) {
+    header {
+
+        padding: 10px 0px 0px 0px;
+    }
+}
+
+nav {
+    width: 80vw;
+    margin: auto;
+}
+
+
+
+.outerul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.innerul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media only screen and (max-width:600px) {
+    .innerul {
+        transform: scale(0.7);
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .innerul {
+        transform: scale(0.5);
+    }
+}
+
+
+.innerul span img {
+    width: 15px;
+    object-position: center center;
+}
+
+ul li img {
+    width: 150px;
+}
+
+@media only screen and (max-width:600px) {
+    ul li img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    ul li img {
+        width: 60px;
+    }
+}
+
+ul li span {
+    padding: 3px;
+}
+
+
+.btn-red1,
+.btn-red2:hover {
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+@media only screen and (max-width:400px) {
+    .btn1 {
+        padding: 2.5px 7.5px;
+        font-size: 12px;
+    }
+}
+
+.btn-red1 {
+    background-color: #E50914;
+    opacity: (1);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: white;
+    font-size: 15px;
+    border: 2px solid #E50914;
+}
+
+@media only screen and (max-width:400px) {
+    .btn-red1 {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+}
+
+
+.btn-red1:hover {
+    background-color: #d10e17;
+    border: 2px solid #d10e17;
+}
+
+
+.text {
+    padding: 120px 0px 20px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0px;
+
+
+}
+
+@media only screen and (max-width:600px) {
+    .text {
+        transform: scale(0.6);
+        padding: 0px 0px 0px 0px;
+        bottom: 20px;
+    }
+}
+
+.t1 {
+    font-family: "netflix sans", sans-serif;
+    font-weight: 900;
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.t2 {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.t3 {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px 0px 0px 0px;
+
+}
+
+.bottombtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+@media only screen and (max-width:600px) {
+    .bottombtns {
+        flex-direction: column;
+        transform: scale(0.5);
+        bottom: 50px;
+
+    }
+}
+
+
+
+.btn2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 17.5px 90px;
+
+}
+
+@media only screen and (max-width:400px) {
+    .btn2 {
+        padding: 10px 45px;
+    }
+}
+
+.btn-red2 {
+    background-color: #E50914;
+    border-radius: 2px;
+    padding: 10px 25px;
+    color: white;
+    font-size: 25px;
+    border: 2px solid #E50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+@media only screen and (max-width:400px) {
+    .btn-red2 {
+        padding: 5px 12px;
+        font-size: 16px;
+    }
+}
+
+.btn-red2:hover {
+    background-color: #d10e17;
+    border: 2px solid #d10e17;
+    transition: 0.1s ease;
+}
+
+.section3 {
+    font-family: "poppins";
+    color: white;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 70px auto;
+}
+
+.more {
+    font-size: 28px;
+    padding: 20px 0px;
+    font-weight: 400;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+}
+
+.grids {
+    flex-wrap: wrap;
+    background-color: #1D1020;
+    border-radius: 20px;
+    padding: 20px;
+    color: rgb(176, 176, 184);
+    position: relative;
+    overflow: hidden;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0px 0px 30px 0px;
+    color: white;
+}
+
+.image {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+
+}
+
+.sub-heading {
+    padding: 0px 0px 100px 0px;
+}
+
+.FAQ {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    margin-bottom: 10px;
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+    color: white;
+
+
+}
+
+@media only screen and (max-width:600px) {
+    .FAQ {
+        transform: scale(0.7);
+    }
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq {
+    width: 78vw;
+    color: white;
+    border: 1px solid rgb(44, 43, 43);
+    background-color: rgb(44, 43, 43);
+    margin: 4px 0px;
+    padding: 20px 15px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width:600px) {
+    .faq {
+        transform: scale(0.7);
+        width: 90vw;
+    }
+}
+
+.faq img {
+    width: 35px;
+}
+
+.faq:hover {
+    cursor: pointer;
+    background-color: rgb(66, 64, 64);
+    border-color: rgb(66, 64, 64);
+    transition: 0.2s ease;
+}
+
+.t3sec4 {
+    margin: 70px 0px 20px 0px;
+}
+
+@media only screen and (max-width:600px) {
+    .t3sec4 {
+        margin: 50px 0px 20px 0px;
+        flex-wrap: wrap;
+
+    }
+}
+
+.t3 {
+    color: white;
+}
+
+@media only screen and (max-width:650px) {
+    .t3 {
+        flex-wrap: wrap;
+        margin: 10px 10px;
+
+    }
+}
+
+.bottom {
+    margin-bottom: 100px;
+}
+
+
+@media only screen and (max-width:650px) {
+    .bottom {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .bottombtns {
+        margin: 50px 0px 50px 0px;
+        transform: scale(0.7);
+    }
+}
+
+.btn3 {
+    width: 30vw;
+    /* position: sticky;
+    bottom: 10px; */
+}
+
+footer {
+    font-family: "poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(177, 177, 184);
+}
+
+.footernumber {
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+
+.footergrid {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px 0px 70px 0px;
+}
+
+@media only screen and (max-width:1000px) {
+    .footergrid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+}
+
+
+
+.h1 {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footergridcontent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+a {
+    font-size: 14px;
+    margin: 5px 0px;
+    color: rgb(185, 185, 191);
+}
+
+.footerbtn {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+
+
+.h2 {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.h3 {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 12px;
+    margin-bottom: 120px;
+    color: rgb(115, 115, 118);
+    text-wrap: wrap;
+}
+
+.bluelink {
+    color: rgb(38, 0, 255);
+
+}
+
+.container {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    /* This hides the sides of the massive circle */
+    position: relative;
+    background: rgba(0, 0, 0, 0)
+        /* Match your background color */
+}
+
+.curved-line {
+    width: 165%;
+    /* Make it wider than the screen to flatten the arc */
+    height: 500px;
+    /* A tall height ensures the curve is shallow */
+    background-color: black;
+    /* The "Line" itself */
+    border-top: 4px solid #e50914;
+    /* Netflix Red */
+    box-shadow: 0px 5px 20px 12px rgb(28, 29, 69) inset;
+
+
+    /* Curve it! */
+    border-radius: 50%;
+
+    /* Center it perfectly */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* top: 10px; Adjust this to show more/less of the curve */
+}
+
+@media only screen and (max-width:500px) {
+    .curved-line {
+        height: 700px;
+        width: 250%;
+    }
+}
+
+.section2 {
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending {
+    color: white;
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    margin: 10px 0px 10px 0px;
+
+}
+
+.trendgrid {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    color: white;
+    margin-top: 20px;
+
+
+}
+
+.section2 img {
+    border-radius: 10px;
+}
+
+
+.thumbnail {
+    display: flex;
+    position: relative;
+    margin: 10px 20px;
+
+}
+
+.number {
+    font-family: "poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.10rem rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    bottom: -25px;
+    text-decoration: none;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+
+.intro-btn {
+    position: relative;
+}
+
+@media only screen and (max-width:650px) {
+    .introbtn {
+        position: relative;
+        bottom: 20px;
+
+    }
+
+}
+
+@media only screen and (max-width:520px) {
+    .introbtn {
+        position: relative;
+        bottom: 100px;
+
+    }
+
+}
+
+@media only screen and (max-width:650px) {
+    .btn3 {
+        padding-left: 150px;
+        padding-right: 150px;
+
+    }
+}
